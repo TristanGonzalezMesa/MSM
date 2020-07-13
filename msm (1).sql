@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 12 jul 2020 om 10:16
+-- Gegenereerd op: 14 jul 2020 om 01:16
 -- Serverversie: 10.4.11-MariaDB
 -- PHP-versie: 7.2.28
 
@@ -47,7 +47,7 @@ CREATE TABLE `gebruikers` (
 
 INSERT INTO `gebruikers` (`id`, `voornaam`, `achternaam`, `straat`, `postcode`, `woonplaats`, `email`, `wachtwoord`, `rol`, `Coins`) VALUES
 (1, 'Tristan', 'Mesa Gonzalez', 'Klipper 49', '1721GV', 'Broek Op Langedijk', 'Weplayagarnow@gmail.com', '123', 9, 20),
-(2, 'Juan', 'Juan', 'Juan', '123', 'Juan', 'Juan@Juan.nl', 'Juan', 0, 385),
+(2, 'Juan', 'Juan', 'Juan', '123', 'Juan', 'Juan@Juan.nl', 'Juan', 0, 225),
 (19, 'Test', 'Test', 'Test', 'Test', 'Woonplaats', 'admin@admin.nl', 'test123', 9, 0),
 (23, 'Test', 'Test', 'Test', 'Test', 'Test', 'Weplayagarnow1@gmail.com', '1234', 9, 0),
 (27, 'Test', 'Test', 'Test', 'Test', 'Test', 'VOORBEELDTEST@GMAIL.COM', '123', 9, 0);
@@ -63,15 +63,17 @@ CREATE TABLE `orderklant` (
   `Naam` varchar(30) NOT NULL,
   `Email` varchar(40) NOT NULL,
   `Volgers` int(11) NOT NULL,
-  `Datum` date NOT NULL
+  `Datum` date NOT NULL,
+  `StatusOrder` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `orderklant`
 --
 
-INSERT INTO `orderklant` (`id`, `Naam`, `Email`, `Volgers`, `Datum`) VALUES
-(69, 'OhPubers', 'Juan@Juan.nl', 1000, '2020-07-11');
+INSERT INTO `orderklant` (`id`, `Naam`, `Email`, `Volgers`, `Datum`, `StatusOrder`) VALUES
+(71, 'OhPubers', 'Juan@Juan.nl', 500, '2020-07-14', ''),
+(72, 'OhPubers', 'Juan@Juan.nl', 500, '2020-07-14', 'In behandeling');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -103,7 +105,7 @@ ALTER TABLE `gebruikers`
 -- AUTO_INCREMENT voor een tabel `orderklant`
 --
 ALTER TABLE `orderklant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

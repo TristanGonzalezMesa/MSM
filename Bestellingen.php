@@ -22,7 +22,8 @@ if(isset($_SESSION["Email"]) == "Email"){
         echo "Account: ". $row["Naam"] . "<br>";
         echo "Aantal: ". $row["Volgers"]. "<br>";
         echo "Kostte: ". $kosten ."<br>";
-        echo "Datum: ". $row["Datum"]. "<br>"."<br>";;
+        echo "Datum: ". $row["Datum"]."<br>";
+        echo "Status Bestelling: ". $row["StatusOrder"]. "<br>"."<br>";
       }
     } else {
       echo "Nog geen bestellingen";

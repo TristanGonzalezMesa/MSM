@@ -79,8 +79,8 @@ if(isset($_POST['koop'])) {
               $date_clicked = date('Y-m-d H:i:s');;
             
               $sql = "INSERT orderklant 
-              (Naam, Email, Volgers, Datum)
-              VALUES ('$account', '$email', '$gekocht', '$date_clicked')";
+              (Naam, Email, Volgers, Datum, StatusOrder)
+              VALUES ('$account', '$email', '$gekocht', '$date_clicked', 'In behandeling')";
               
               if ($conn->query($sql) === TRUE) {
                 echo "Toevoegen gelukt!";
@@ -122,8 +122,8 @@ if(isset($_POST['koop'])) {
               $date_clicked = date('Y-m-d H:i:s');;
             
               $sql = "INSERT orderklant 
-              (Naam, Email, Volgers, Datum)
-              VALUES ('$account', '$email', '$gekocht', '$date_clicked')";
+              (Naam, Email, Volgers, Datum, StatusOrder)
+              VALUES ('$account', '$email', '$gekocht', '$date_clicked', 'In behandeling')";
               
               if ($conn->query($sql) === TRUE) {
                 echo "Toevoegen gelukt!";
