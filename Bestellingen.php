@@ -18,7 +18,7 @@ if(isset($_SESSION["Email"]) == "Email"){
         else{
             $kosten = "70 coins";
         }
-
+        echo "<br>";
         echo "Account: ". $row["Naam"] . "<br>";
         echo "Aantal: ". $row["Volgers"]. "<br>";
         echo "Kostte: ". $kosten ."<br>";
