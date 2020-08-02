@@ -52,6 +52,7 @@ $Password = $_POST['Password'];
 
     $_SESSION['rol'] = $row['rol'];
   $_SESSION['Email'] = $row['email'];
+  $_SESSION['Voornaam'] = $row['voornaam'];
   header('location: index.php');
 } else {
   echo 'Foute invoer';

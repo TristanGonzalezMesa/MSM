@@ -1,13 +1,15 @@
-<?php include ('Database.php'); 
+<h1> Bestellingen </h1>
+
+<?php include ('../Database.php'); 
 session_start();
 ?>
-<?php if(isset($_SESSION['Email']) == "Email"){echo "";}else{header('Location: ./index.php');}?>
-<?php if(isset($_SESSION['Email']) == "Email"){echo "<li><a href='./uitloggen.php'>Uitloggen</a></li><li><a href='Kopen.php'>Volgers Kopen</a></li><li><a href='./Bestellingen.php'>Bestellingen</a></li>";}else{echo "<li><a href='Login.php'>Inloggen</a></li>";}?>
-<?php if(isset($_SESSION['rol'])){if ($_SESSION['rol'] == 9) {echo "<li><a href='Adminpage/index.php'>CMS</a></li>";}}?>
+<?php if(isset($_SESSION['Email']) == "Email"){echo "";}else{header('Location: ../../index.php');}?>
+<?php if(isset($_SESSION['Email']) == "Email"){echo "<li><a href='../uitloggen.php'>Uitloggen</a></li><li><a href='../Kopen.php'>Volgers Kopen</a></li>";}else{echo "<li><a href='Login.php'>Inloggen</a></li>";}?>
+<?php if(isset($_SESSION['rol'])){if ($_SESSION['rol'] == 9) {echo "<li><a href='../Adminpage/index.php'>CMS</a></li>";}}?>
 <?php
 if(isset($_SESSION["Email"]) == "Email"){
 
-    $sql = "SELECT * FROM orderklant WHERE email='".$_SESSION['Email']."' ";
+    $sql = "SELECT * FROM orderklant";
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {

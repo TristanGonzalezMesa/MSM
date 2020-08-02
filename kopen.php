@@ -3,7 +3,7 @@ session_start();
 ?>
 <?php if(isset($_SESSION['Email']) == "Email"){echo "";}else{header('Location: ./index.php');}?>
 <?php if(isset($_SESSION['Email']) == "Email"){echo "<li><a href='./uitloggen.php'>Uitloggen</a></li><li><a href='Kopen.php'>Volgers Kopen</a></li><li><a href='./Bestellingen.php'>Bestellingen</a></li>";}else{echo "<li><a href='Login.php'>Inloggen</a></li>";}?>
-
+<?php if(isset($_SESSION['rol'])){if ($_SESSION['rol'] == 9) {echo "<li><a href='Adminpage/index.php'>CMS</a></li>";}}?>
 
 <?php
 
@@ -22,7 +22,7 @@ echo "<br>"."Ingelogd als: ". $_SESSION["Email"]. "<br>";
         echo $row["Coins"]. " Coins heeft u";
       }
     } else {
-      echo "0 results";
+      echo "0 coins";
     }
     $conn->close();}
     ?>
