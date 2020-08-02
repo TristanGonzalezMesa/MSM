@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="assets/css/loginregister2.css" />
 <?php include ('./Database.php'); 
 ?>
 <div class="bradcam_area breadcam_bg">

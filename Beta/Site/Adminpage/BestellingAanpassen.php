@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../assets/css/main2.css">
 <?php include ('../Database.php'); 
 
 if(isset($_GET['id'])){
@@ -31,9 +32,9 @@ try{
    ?>
 
    
-<link rel="stylesheet" href="../bootstrap.min.css">
-    <link rel="stylesheet" href="../style11.css">
-    <link rel="stylesheet" href="../loginregister2.css">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style1.css">
+    <link rel="stylesheet" href="../assets/css/main2.css">
     <script src="../js/loginregister.js"></script>
 
 <form method="post" action="">

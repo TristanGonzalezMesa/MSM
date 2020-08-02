@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../assets/css/main2.css">
 <h1> Nieuwe Bestellingen </h1>
 
 <?php include ('../Database.php'); 

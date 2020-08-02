@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../assets/css/main2.css">
 <?php include ('../Database.php'); 
 session_start();
 ?>
