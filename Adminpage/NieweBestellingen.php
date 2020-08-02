@@ -1,4 +1,4 @@
-<h1> Bestellingen </h1>
+<h1> Nieuwe Bestellingen </h1>
 
 <?php include ('../Database.php'); 
 session_start();
@@ -9,7 +9,7 @@ session_start();
 <?php
 if(isset($_SESSION["Email"]) == "Email"){
 
-    $sql = "SELECT * FROM orderklant";
+    $sql = "SELECT * FROM orderklant WHERE StatusOrder = 'In Behandeling'";
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
@@ -33,7 +33,7 @@ if(isset($_SESSION["Email"]) == "Email"){
          "<a href='./BestellingDetail.php?id=". $row['id'] . " '>Meer.. </a>". "<br>";
       }
     } else {
-      echo "Nog geen bestellingen";
+      echo "<br>"."Nog geen nieuwe bestellingen";
     }
     $conn->close();}
     ?>

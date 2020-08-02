@@ -2,7 +2,7 @@
 session_start();
 ?>
 <p> Adminpage </p>
-
+<li><a href='../Adminpage/NieweBestellingen.php'>Nieuwe Bestellingen</a></li>
 <li><a href='../Adminpage/Bestellingen.php'>Bestellingen</a></li>
 
 
