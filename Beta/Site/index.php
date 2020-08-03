@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Untitled</title>
+		<title>Nogniks</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main2.css" />
@@ -67,18 +67,18 @@ session_start();
 								<div class="features">
 									<section>
 										<span class="icon fa-gem major"></span>
-										<h3>Beste kwaliteit</h3>
-										<p>Morbi in sem quis dui placerat ornare. Pellentesque ipsum dolor</p>
+										<h3>Echte Volgers</h3>
+										<p>De volgers die je ontvangt zijn echte accounts gemaakt door echte mensen.</p>
 									</section>
 									<section>
 										<span class="icon solid fa-chart-line major"></span>
-										<h3>Bekend worden</h3>
-										<p>Integer vitae libero ac risus eges placerat voluptrus magna</p>
+										<h3>Beste Kwaliteit</h3>
+										<p>Mesa Social Management levert de best mogelijke kwaliteit op gebied van volgers</p>
 									</section>
 									<section>
 										<span class="icon solid fa-camera-retro major"></span>
-										<h3>Echte volgers</h3>
-										<p>Fusce lobortis lorem ipsum semper sagittis etiam consequat</p>
+										<h3>Snelle Levering</h3>
+										<p>Na betaling beginnen wij direct met de levering van de Instagram volgers</p>
 									</section>
 								</div>
 							</div>
@@ -89,8 +89,8 @@ session_start();
 				<!-- Section -->
 					<section id="one" class="main">
 						<header class="accent1">
-							<h2>Sed adipising ornare risus</h2>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus, metus lorem feugiat tempus adipiscing.</p>
+							<h2>Snelste levering van iedereen!</h2>
+							<p>De volgers die wij sturen zijn accounts gemaakt door echte mensen. Wij leveren volgers die allemaal Nederlands zijn, wij leveren geen volgers uit andere landen!</p>
 						</header>
 						<ul class="tabs">
 							<li>
@@ -106,7 +106,9 @@ session_start();
 											<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
 										</li>
 									</ul>
+									<h6> </h6>
 									<span class="image1"><img src="images/Foto.png" alt="" /></span>
+									<h6> </h6>
 									<ul>
 										<li>
 											<h4>Neque veroeros</h4>
@@ -175,7 +177,7 @@ session_start();
 					</section>
 
 				<!-- Section -->
-					<section id="two" class="main accent2">
+					<section id="two" class="main accent1">
 						<header>
 							<h2>Etiam sed faucibus consequat</h2>
 							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt magna accumsan.</p>
